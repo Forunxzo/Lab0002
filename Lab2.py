@@ -21,10 +21,10 @@ def cal_average(input_list):
     average = total/len(input_list)
     print("Average = ", average)
 
-def find_min_max(input_lsit):
+def find_min_max(input_list):
     print("find_min_max")
-    input_lsit.sort()
-    resultlist = [input_lsit[0], input_lsit[-1]]
+    input_list.sort()
+    resultlist = [input_list[0], input_list[-1]]
     print("Min & Max list = ",resultlist)
     return resultlist
 
