@@ -6,15 +6,18 @@ def calculate_bmi(height,weight):
     print("Weightclass Classification:",end="")
     if BMI < 18.5:
         print("Under Weight")
+        return -1
     elif BMI>25:
         print("Over Weight")
+        return 1
     else:
-        print("Normal Weight")                        
+        print("Normal Weight")  
+        return 0                      
 
 
-calculate_bmi(weight=57,height=1.73)  
-print("====================") 
-calculate_bmi(weight=57,height=1.73) 
-print("====================") 
-calculate_bmi(weight=57,height=1.73)
-print("====================")   
+result=calculate_bmi(weight=57,height=1.73)  
+print("result=",result) 
+result=calculate_bmi(weight=97,height=1.63)
+print("result=",result) 
+result=calculate_bmi(weight=37,height=1.89)
+print("result=",result) 
