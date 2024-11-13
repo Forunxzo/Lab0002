@@ -20,6 +20,7 @@ def cal_average(input_list):
     total = sum(input_list)
     average = total/len(input_list)
     print("Average = ", average)
+    return average
 
 def find_min_max(input_list):
     print("find_min_max")
@@ -34,12 +35,13 @@ def sort_temperature(input_list):
 def calc_median_temperature(input_list):
     print("calc_median_temperature")
     cnt=len(input_list)
-
+    input_list.sort()
     if cnt%2 is 1:
         median=input_list[(cnt-1)//2]
     else:
         median=(input_list[cnt//2]+input_list[(cnt//2)-1])/2
     print("Medium=",median)
+    return median
 
 
 def main():
